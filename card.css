@@ -1,0 +1,107 @@
+
+/*Root*/
+html{
+    box-sizing: border-box;
+    background-color: rgb(245, 243, 243);
+}
+
+::before,
+::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 ;
+    
+}
+
+/*body*/
+.wrapper{
+    width: 100vw;
+}
+h1{
+    color: darkorange;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.span1{
+    display: inline-block;
+    font-size: 1.3rem;
+}
+.span2{
+    font-size: larger;
+}
+p{
+    margin: 0 auto;
+    width: 50%;
+    
+}
+
+/*input and icon styling*/
+.input-icons{
+    
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+input{
+    outline: 0;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background-color: transparent;
+}
+.icons{
+    color: gray;
+}
+
+/*links*/
+
+.links, a {
+    margin: 0 auto ;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: grey;
+}
+
+/*article*/
+
+article{
+    display: flex;
+    padding: 2em;
+   
+    width: 50%;
+    overflow: hidden ;
+       
+   
+}
+.code{
+    width: auto;
+    text-align: center;
+    font-size: x-small;
+    background-color: lightskyblue;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: rgb(34, 80, 99);
+}
+.date{
+    width: auto;
+    
+   padding: 0.5em;
+    text-align: center;
+    font-size: x-small;
+    color: gray;
+}
+/* main body*/
+.main-body{
+    width: 100vw;
+}
+
+h2{
+    width: 50%;
+    margin: 2em auto;
+    text-align: center;
+}
+
