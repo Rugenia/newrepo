@@ -1,0 +1,104 @@
+
+h1{
+    width: 50%;
+    margin: 2em auto;
+    text-align: center;
+    
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: repeat(4,50px);
+    grid-gap: 3px;
+    grid-template-areas:  " first last"
+                          " email email"
+                          "password password"
+                          "signup signup"
+   
+    
+}
+
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    transition: color 2s ease  ;
+}
+a:hover{
+    color: black;
+}
+.item__first{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgb(102, 101, 101);
+}
+.item__last{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(102, 101, 101)
+}
+.item__email{
+    grid-area: email;
+    background-color: rgb(102, 101, 101)
+}
+.item__password{
+    grid-area: password;
+    background-color: rgb(102, 101, 101)
+}
+.item__signup{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    text-align: center;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    
+}
+.signup{
+    color: white;
+    transition: color 1 ease;
+}
+.signup:hover{
+    color: blue;
+   
+}
+
+
+p{
+    width: auto;
+    text-align: center;
+    margin: 2em auto;
+    transition: width 2s ease, transform 2s;
+
+}
+p:hover{
+    width: 25%;
+    transform: rotate(20deg);
+}
+.signin{
+    color: blue;
+}
+
+
+
+
+
+
+
+@media  (max-width:700px){
+    .container{
+        width: auto;
+        display: flex;
+    }
+    
+}
